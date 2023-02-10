@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transport system</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/bootstrap/bootstrap-5.2.2-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../source/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/temp1.css" >
+    <link rel="stylesheet" href="../css/abtemp.css" >
+    <link rel="stylesheet" href="../css/custormer.css">
+</head>
+<body class="bod">
+    
+    <div id="container" class="container">
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3 h-100 p-0 col-3 col-lg-3 col-md-3 col-sm-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <div class="mb-2" >
+                <div>
+                    <img src="../source/images/team/team2.jpg" alt="" class="rounded img-thumbnail img-fluid">
+                </div>
+                <div class="px-2 ">
+                    <i>drivers name </i>
+                    <i>09082....</i>
+                </div>  
+              </div>
+              <button class="nav-link active my-4" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+              <button class="nav-link my-4" id="v-pills-Messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Messages" type="button" role="tab" aria-controls="v-pills-Messages" aria-selected="false">Messages</button>
+              <button class="nav-link my-4" id="v-pills-Activity-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Activity" type="button" role="tab" aria-controls="v-pills-Activity" aria-selected="false">Activity</button>
+              <button class="nav-link my-4" id="v-pills-Service-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Service" type="button" role="tab" aria-controls="v-pills-Service" aria-selected="false">Service</button>
+              <button class="nav-link my-4" id="v-pills-Expenses-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Profile" type="button" role="tab" aria-controls="v-pills-Profile" aria-selected="false">Profile</button>
+              <button type="button" class="btn nav-link my-4 ">Log-out</button>
+            </div>
+            <div class="tab-content col-9 col-lg-9 col-md-9 col-sm-9 px-1" id="v-pills-tabContent">
+              <!-- THE IS THE HOME PAGES OF THE DRIVEERS -->
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <section>
+                    <div class="row my-4">
+                        <div class="inner-banner px-3 py-2" style="background: url(../source/images/banner/banner2.jpg) center; background-repeat: no-repeat;">
+                            <div class=' d-inline container'>
+                                <div>
+                                    <h6 class="text-uppercase text-white" style="font-size: small;">Dashboard</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mb-3  bg-info" >
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../source/images/team/ride-booker-book-rides-for-your-team-1024x536.jpg" class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../source/images/team/driver1.jpg" class="d-block w-100 img-fluid " alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../source/images/banner/worked on.jpg" class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="my-2">
+                        <div class="d-inline-flex my-2 col-12 py-3 " style="background-color: darkorange; color: white;">
+                            <div class="d-flex justify-content-start ms-5">
+            
+                                <h3>Plan Your Ride</h3>
+                            </div>
+                            <div class="d-flex justify-content-end mx-auto">
+                                <div>
+                                    <h5>AMOUNT DEPOSIT </h5>
+                                    <b><h5> NGN 2000</h5> </b>
+                                </div>  
+                            </div>
+                        </div>
+                        <div>
+                            <form class="form-group" action="">
+                                <div>
+                                    <select class="form-select form-select-lg" id="swicthride" aria-label="Default select example">
+                                        <option selected>Switch Rider</option>
+                                        <option value="for me"> <i class="fa fa-user"></i> For me  <i class="fa fa-caret-down"></i> </option>
+                                        <option value="add ride"> <i class="fa fa-user-plus"></i> Add rider <i class="fa fa-caret-down"></i> </option>
+            
+                                    </select>
+                                    <div class="newridebook" id="newridebook">
+                                    
+                                        <div class="form-group">
+                                            <label for="">First Name</label>
+                                            <input class="form-control" type="text" placeholder="Default input">
+            
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+                                        </div>
+                                            
+                                        <div class="form-group">
+                                            <label for="">Last Name</label>
+                                            <input class="form-control" type="text" placeholder="Default input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Phone Number</label>
+                                            <div class="d-inline-flex">
+                                                <Select class="form-select form-select-sm">
+                                                    <option value="+234">+234</option>
+                                                </Select>
+                                                <input class="form-control" type="text" placeholder="phone number">
+                                            </div>
+                                            </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                                <div>
+                                    <select class="form-select form-select-lg mt-3" id="swicthridetype" aria-label="Default select example">
+                                        <option selected>Choose ride type</option>
+                                        <option value="one way"><i></i>One way</option>
+                                        <option value="with stops"><i></i>With stops</option>
+            
+                                    </select>
+                                    <div>
+                                        <div>
+                                            <div id="oneway" class="mt-3">
+                                                <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Pick-up point</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-select form-select-lg " id="onewwayselection1" aria-label="Default select example">
+                                                            <option selected>Choose Destination</option>
+                                                            <option value="PARK A"> <i></i>PARK A</option>
+                                                            <option value="PARK B"><i></i>PARK B</option>
+                                                            <option value="PARK C"><i></i>PARK C`</option>
+                                                            <option value="PARK D"><i></i>PARK D</option>
+                                                            <option value="PARK E"><i></i>PARK E</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row 
+                                                mt-2">
+                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Dropping point</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-select form-select-lg" id="onewwayselection2" aria-label="Default select example">
+                                                            <option selected>Choose Destination</option>
+                                                            <option value="PARK A"><i></i>PARK A</option>
+                                                            <option value="PARK B"><i></i>PARK B</option>
+                                                            <option value="PARK C"><i></i>PARK C`</option>
+                                                            <option value="PARK D"><i></i>PARK D</option>
+                                                            <option value="PARK E"><i></i>PARK E</option>
+                                                        </select>
+                                                    </div>
+            
+                                                </div>
+                                                <div id="showvalid">
+            
+                                                </div>
+                                            </div>
+                                            <div id="multipleway">
+                                                <div class="form-group row">
+                                                    Drop section not yet ready
+                                                </div>
+                                                <div>
+                                                    To
+                                                </div>
+                                                <div>
+                                                    <div class="form-group row">
+                                                    Drop SECTION
+                                                    </div>
+                                                </div>      
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h3>Pick-up Time</h3>
+                                    <input type="time" class="form-control" name="" id="" required>
+                                </div>
+                                <div>
+                                    <h4>Price</h4>
+                                    <details>
+                                        <summary>
+                                            <div>
+                                                NGN 500
+                                            </div>
+                                        </summary>
+                                        
+                                    </details>
+                                </div>
+                                <div>
+                                    <button type="" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Ride</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>     
+                    </section>
+                </div>
+         
+                <!-- THE MESSAGES OF THE DRIVERS -->
+                <div class="tab-pane fade" id="v-pills-Messages" role="tabpanel" aria-labelledby="v-pills-Messages-tab" tabindex="0">
+                    <section>
+                        <div class="row">
+                            <div class="inner-banner px-3 py-2" style="background: url(../source/images/banner/banner2.jpg) center; background-repeat: no-repeat;">
+                                <div class=' d-inline container'>
+                                    <div>
+                                        <h6 class="text-uppercase text-white" style="font-size: small;">Messages</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="d-inline-flex">
+                                <div>
+                                    <i class="m-0 fs-2 fa fa-exclamation-triangle "></i>
+                                </div>
+                                <div>
+                                    <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapme1" aria-expanded="false" aria-controls="collapseWidthExample">
+                                        Toggle width collapse
+                                      </button>
+                                    <i class="fs-6 text-secondary">8 minutes ago</i>
+                                </div>
+                                
+                            </div>
+                            <div style="min-height:auto;">
+                                <div class="collapse collapse-horizontal" id="collapme1">
+                                  <div class="card card-body" style="width:100%;">
+                                    This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+ 
+                        <div class="card">
+                            <div class="card-header notification-list_content" id="headingOne">
+                                <div class="text-warning   ">
+                                    <i class="m-0 fs-2 fa fa-exclamation-triangle "></i>
+                                </div>
+                                <div class="">
+                                        <button class="btn p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                        make your necesary payment in 7 days
+                                        </button>
+                                    <i class="fs-6 text-secondary">8 minutes ago</i>
+                                </div> 
+                            </div>
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                <div class="card-body">
+                                Your account deatails didn't balance up with customers that booked you as thier driver
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-inline-flex">
+                                <div>
+                                    <i class="m-0 fs-2 fa fa-exclamation-triangle "></i>
+                                </div>
+                                <div>
+                                    <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapme2" aria-expanded="false" aria-controls="collapseWidthExample">
+                                        Toggle width collapse
+                                      </button>
+                                    <i class="fs-6 text-secondary">8 minutes ago</i>
+                                </div>
+                                
+                            </div>
+                            <div style="min-height:auto;">
+                                <div class="collapse collapse-horizontal" id="collapme2">
+                                  <div class="card card-body" style="width:100%;">
+                                    This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="d-inline-flex">
+                                <div>
+                                    <i class="m-0 fs-2 fa fa-exclamation-triangle "></i>
+                                </div>
+                                <div>
+                                    <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapme3" aria-expanded="false" aria-controls="collapseWidthExample">
+                                        Toggle width collapse
+                                      </button>
+                                    <i class="fs-6 text-secondary">8 minutes ago</i>
+                                </div>
+                                
+                            </div>
+                            <div style="min-height:auto;">
+                                <div class="collapse collapse-horizontal" id="collapme3">
+                                  <div class="card card-body" style="width:100%;">
+                                    This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+
+                    </section>
+                </div>
+              <!-- THE Activities PAGES  -->
+                <div class="tab-pane fade" id="v-pills-Activity" role="tabpanel" aria-labelledby="v-pills-Activity-tab" tabindex="0">
+                    <section>
+                        <div class="row">
+                            <div class="inner-banner px-3 py-2" style="background: url(../source/images/banner/banner2.jpg) center; background-repeat: no-repeat;">
+                                <div class=' d-inline container'>
+                                    <div>
+                                        <h6 class="text-uppercase text-white" style="font-size: small;">Activities</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div>
+                                <h2>Past</h2>
+                                <i></i>
+                            </div>
+                            <div class="card my-2" >
+                                <div >
+                                <h5 class="card-header">loatin</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title">Wajenuary 12  4:42am</h5>
+                                    <p class="card-text">NGN 0.00. CANCELED</p>
+                                    <a href="#" class="card-link btn btn">Card link</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-warning mb-3" >
+                                <div class="card-header">Location</div>
+                                <div class="card-body">
+                                <h5 class="card-title">Wajenuary 12  4:42am</h5>
+                                <p class="card-text">NGN 0.00. CANCELED</p>
+                                <a href="#" class="card-link btn btn">Card link</a>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-info mb-3" >
+                                <div class="card-header">Location</div>
+                                <div class="card-body">
+                                <h5 class="card-title">jenuary 12  4:42am</h5>
+                                <p class="card-text">NGN 0.00. CANCELED</p>
+                                <a href="#" class="card-link btn btn">Card link</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" >
+                                <div class="card-header">Location</div>
+                                <div class="card-body">
+                                <h5 class="card-title">jenuary 12  4:42am</h5>
+                                <p class="card-text">NGN 0.00. CANCELED</p>
+                                <a href="#" class="card-link btn btn">Card link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              <!-- services OF THE PAGES -->
+                <div class="tab-pane fade" id="v-pills-Service" role="tabpanel" aria-labelledby="v-pills-Service-tab" tabindex="0">
+                    <section>
+                        <div class="row">
+                            <div class="inner-banner px-3 py-2" style="background: url(../source/images/banner/banner2.jpg) center; background-repeat: no-repeat;">
+                                <div class=' d-inline container'>
+                                    <div>
+                                        <h6 class="text-uppercase text-white" style="font-size: small;">Services Of The page</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              <!-- PROFILES FOR THE PAGES  -->
+              <div class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab" tabindex="0">
+                <section>
+                    <div class="row">
+                        <div class="inner-banner px-3 py-2" style="background: url(../source/images/banner/banner2.jpg) center; background-repeat: no-repeat;">
+                            <div class=' d-inline container'>
+                                <div>
+                                    <h6 class="text-uppercase text-white" style="font-size: small;">Profile</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1>User Name</h1>
+                            <p><i></i>5.0</p>
+                        </div>
+                        <div class="">
+                            <div class=" mb-4 " style="background-color: hsl(220deg 100% 72%);">
+                                <div class=" card" style="width: 100%;">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <h3>Wallet</h3>
+                                </div>
+                                <div class="d-inline-flex mb-3">
+                                    <div class=" card2 col-lg-4 col-md-4 col-sm-4  w-80 py-5 px-5">
+                                        <i class="fa-solid fa-money-bill-transfer"></i>
+                                        <h5>AMOUNT DEPOSIT </h5>
+                                        <h5><bold> NGN </bold>2000</h5>
+                                    </div>
+    
+                                    <div class=" card2 col-lg-4 col-md-4 col-sm-4  mx-5 w-80 py-5 px-5">
+                                        <i class="fa-solid fa-money-from-bracket"></i>
+                                        <h5>USED AMOUNT </h5>
+                                        <h5><bold> NGN </bold>1500</h5>
+                                    </div>
+                                  
+                                </div>  
+                            </div>
+
+                            <div class="me-3  mb-4 w-100" style="background-color: hsl(220deg 100% 72%); ">
+                                <div class=" card" style="width: 100%;">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <h3>Help</h3>
+                                </div>
+                                <div class="d-block w-100 h-auto mb-3">
+
+                                    <div  class="mb-3 w-100 bg-dark text-white rounded shadow  py-3 mb-2" ><a ">how to get aride for another person</a></div>
+                                    <div class="mb-3 w-100 bg-dark text-white rounded shadow  py-3 mb-2"><a >How to link my card to the app</a>
+                                    </div>
+                                    <div class="mb-3 w-100  bg-dark text-white rounded shadow  py-3 mb-2"><a >cna i become a driver</a></div> 
+                                    <div class="mb-3 w-100  bg-dark text-white rounded shadow  py-3 mb-2"><a >can i make monwey as a passenger </a></div>
+                                    <div class="mb-3 w-100  bg-dark text-white rounded shadow  py-3 mb-2"><a>can i report or review a ride </a></div>
+                                    
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div class="card text-center">
+                            <div>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="true" aria-controls="collapseWidthExample">
+                                Toggle width collapse
+                                </button>
+                            </div>
+                            <div class="collapse-horizontal collapse show" id="collapseWidthExample">
+                                <div class="card card-body" style="width: 100%">
+                                    <div>
+                                        <div class="form-group user-box">
+                                            <input type="text" class="form-control">
+                                            <label for="">Name on Card</label>
+
+                                        </div>
+                                        <div>
+                                            <div class="form-group user-box form--group-sm">
+                                                <input type="number" class='form-control cardnum 'img="">
+                                                <label for="">Card Number
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-flex">
+                                            <div class="d-block form-group-sm">
+                                                <div class="form-group">
+                                                    <input type="month" class="form-control">
+                                                    <label for="" class="lahide">Expiry</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-block  ">
+                                                <div class="form-group form-group-sm user-box">
+                                                    <label for="">CVC</label>
+                                                    <input type="number" max="3" class="lesinpt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button>Add Card</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Account Settings</h3>
+                            <p>
+                                <i></i>HOME
+                            </p>
+                            <p>
+                                <i></i>Add Work
+                            </p>
+                            <p>
+                                <i></i>set password
+                            </p>
+                        </div>
+                        
+                    </div>
+                </section>
+              </div>
+            </div>
+        </div>      
+    </div>
+    <footer class="pt-5 pb-4">
+        <div class="container-fluid test-center text-md-left">
+            <div class="row text-center text-md-left ">
+                <div class="col-md-3 col-lg-3 col-sm-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        About Us
+                    </h5>
+                    <hr class="mb-4">
+                    <p class="text-white px-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                         sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-sm-2 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        How can we help you
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                            <a style="text-decoration: none;" href="../html/form.html">Get Started</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/qrt.html">FAQSs</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/index.html">Home</a>
+                    </p>
+                    <p>
+                          <a style="text-decoration: none;" href="../html/contact.html">Contact</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-sm-2 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        Useful links
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                            <a style="text-decoration: none;" href="../html/tpabout.html">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/qrt.html">Terms and Condition</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/index.html">Ticket Policies</a>
+                    </p>
+                    <p>
+                          <a style="text-decoration: none;" href="../html/contact.html">Refund Policy</a>
+                    </p>
+                </div>
+
+                
+                <div class="col-md-2 col-lg-2 col-sm-2 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        privacy Policies
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                            <a style="text-decoration: none;" href="../html/privacy.html">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/privacy.html">Terms and Condition</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/privacy.html">Ticket Policies</a>
+                    </p>
+                    <p>
+                          <a style="text-decoration: none;" href="../html/privacy.html">Refund Policy</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 text-white mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">contacts</h5>
+                    <p>
+                        <li style="list-style:none;" class=" mr-3"><i class="fa fa-home"></i> umuahia abia state</li>
+                    </p>
+                    <p>
+                        <li style="list-style:none;" class=" mr-3"> <i class="fa fa-envelope"></i> thistheemail@gmial.com</li>
+                    </p>
+                    <p>
+                        <li style="list-style:none;" class="mr-3"> <i class="fa fa-phone"></i>+234-009778675</li>
+                    </p>
+                    <p>
+                        <li style="list-style:none;" class=" mr-3"><i class="fa fa-phone"></i>+234-009778675</li>
+                    </p>
+                </div>
+                <hr class="mb-4">
+                <div class="row d-flex justfy-content-center">
+                    <div>
+                        <p class="text-white">
+                            Copyright 2022 All Right Reserved By: <a href="#" style="text-decoration:none;">
+                            <strong class="text-info">The Proividers</strong>
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                
+
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../source/js/form2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div class="col-9 col-lg-9 col-md-9 col-sm-9 px-1">
+              <div class="tab-content" id="v-pills-tabContent">
+                <!--Home section -->
+                <div class="row">
+                    <div class="tab-pane fade show active" id="v-pills-viehcle" role="tabpanel" aria-labelledby="v-pills-viehcle-tab">
+                       <div  >
+                            <div class="disp1 py-5 my-2">
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container ">
+                                        <h1>how to request a ride:</h1>
+                                        <a>REquest a ride<i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="disp2">
+                                <h3>how to request a ride:</h3>
+                                <a>REquest a ride<i class="fa fa-long-arrow-right text-white"></i></a>
+                            </div>
+                       </div>
+
+                       <div >
+                            <div class="d-grid gap-2 searchbtn" style="border-radius: 4px !important;">
+                               <div class="d-inline-flex ">
+                                    <div class=" me-5  col-sm-4 col-lg-4 col-md-4">
+                                        <button class="btn btnre fs-2"><i class="fa fa-search me-5 fs-1"></i>Where to?</button>
+                                    </div>
+                                    <div class=" mx-5 ">
+                                        <button class="  btn2 btn btnre fs-2"><i class="fa fa-clock-o me-1 "></i>Now <i class="fa fa-caret-down"></i></button>
+                                    </div>
+                               </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <button><i></i>Choose a saved place <i></i></button>
+                                </div>
+                                <div>
+                                    <button><i></i>Set a destinaiton</button>
+                                </div>
+                            </div>
+                       </div>
+                       <div>
+                            <h3>Plan Your Ride</h3>
+                            <div>
+                                <div>
+                                    <select class="form-select" id="swicthride" aria-label="Default select example">
+                                        <option selected>Switch Rider</option>
+                                        <option value="for me"><i class="fa fa-user"> For me <i class="fa fa-caret-down"></i></option>
+                                        <option value="add ride"><i class="fa fa-user-plus"></i>Add rider<i class="fa fa-caret-down"></i></option>
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="form-select" id="swicthridetype" aria-label="Default select example">
+                                        <option selected>Choose ride type</option>
+                                        <option value="one way"><i></i>One way</option>
+                                        <option value="with stops"><i></i>With stops</option>
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Pick-up Time</label>
+
+                                    <input type="time" name="" id="">
+                                </div>
+                                <div class="newridebook" id="newridebook">
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="">First Name</label>
+                                          <input class="form-control" type="text" placeholder="Default input">
+
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your <details></details> with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="">Last Name</label>
+                                          <input class="form-control" type="text" placeholder="Default input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Phone Number</label>
+                                            <div class="d-inline-flex">
+                                                <Select>
+                                                    <option value="+234">+234</option>
+                                                </Select>
+                                                <input class="form-control" type="text" placeholder="Default input">
+                                            </div>
+                                          </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div>
+                                    The Location
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <form id="oneway">
+                                                <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Pick-up point</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Choose Destination</option>
+                                                            <option value="PARK A"><i></i>PARK A</option>
+                                                            <option value="PARK B"><i></i>PARK B</option>
+                                                            <option value="PARK C"><i></i>PARK C`</option>
+                                                            <option value="PARK D"><i></i>PARK D</option>
+                                                            <option value="PARK E"><i></i>PARK E</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="inputPassword" class="col-sm-2 col-form-label">Dropping point</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Choose Destination</option>
+                                                            <option value="PARK A"><i></i>PARK A</option>
+                                                            <option value="PARK B"><i></i>PARK B</option>
+                                                            <option value="PARK C"><i></i>PARK C`</option>
+                                                            <option value="PARK D"><i></i>PARK D</option>
+                                                            <option value="PARK E"><i></i>PARK E</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                                <div>
+                                                    <button type="button"><i></i>Book Ride <i></i></button>
+                                                </div>
+
+                                            </form>
+                                            <form id="multipleway">
+                                                <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-2 col-form-label">Your PIck up Point</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Choose Destination</option>
+                                                            <option value="PARK A"><i></i>PARK A</option>
+                                                            <option value="PARK B"><i></i>PARK B</option>
+                                                            <option value="PARK C"><i></i>PARK C`</option>
+                                                            <option value="PARK D"><i></i>PARK D</option>
+                                                            <option value="PARK E"><i></i>PARK E</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="form-group row">
+                                                        <label for="select" class="col-sm-2 col-form-label">Your Destination </label>
+                                                        <div class="col-sm-10">
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected>Choose Destination</option>
+                                                                <option value="PARK A"><i></i>PARK A</option>
+                                                                <option value="PARK B"><i></i>PARK B</option>
+                                                                <option value="PARK C"><i></i>PARK C`</option>
+                                                                <option value="PARK D"><i></i>PARK D</option>
+                                                                <option value="PARK E"><i></i>PARK E</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary" type="button">Button</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <section>
+                                            <form action="">
+                                                <div>
+                                                    <button><i></i>Personal</button>
+                                                    <button><i></i>Business</button>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>TRansport cash</p>
+                                                        <div>
+                                                            <div>
+                                                                TRansport cash
+                                                                NGN 0.00
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>Payment Method</p>
+                                                    <button>Add payment Method</button>
+                                                    <div>
+                                                        <div class="cardsection">
+                                                            this is for card
+                                                            <div>
+                                                                <div>
+                                                                    <div class="form-group user-box">
+                                                                        <input type="text" class="form-control">
+                                                                        <label for="">Name on Card</label>
+
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="form-group user-box form--group-sm">
+                                                                            <input type="number" class='form-control cardnum 'img="">
+                                                                            <label for="">Card Number
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-inline-flex">
+                                                                        <div class="d-block form-group-sm">
+                                                                            <div class="form-group">
+                                                                                <input type="month" class="form-control">
+                                                                                <label for="" class="lahide">Expiry</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-block  ">
+                                                                            <div class="form-group form-group-sm user-box">
+                                                                                <label for="">CVC</label>
+                                                                                <input type="number" max="3" class="lesinpt">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button>Add Card</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+
+                    </div>
+                </div>
+                <!-- Activity page-->
+                <div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+                    <div>
+                        <div>
+                            <h2>Past</h2>
+                            <i></i>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">loatin</h5>
+                              <div class="card-body">
+                                <h5 class="card-title">Wajenuary 12  4:42am</h5>
+                                <p class="card-text">NGN 0.00. CANCELED</p>
+                                <a href="#" class="card-link btn btn">Card link</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Location</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Wajenuary 12  4:42am</h5>
+                              <p class="card-text">NGN 0.00. CANCELED</p>
+                              <a href="#" class="card-link btn btn">Card link</a>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Location</div>
+                            <div class="card-body">
+                              <h5 class="card-title">jenuary 12  4:42am/h5>
+                              <p class="card-text">NGN 0.00. CANCELED</p>
+                              <a href="#" class="card-link btn btn">Card link</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Location</div>
+                            <div class="card-body">
+                              <h5 class="card-title">jenuary 12  4:42am</h5>
+                              <p class="card-text">NGN 0.00. CANCELED</p>
+                              <a href="#" class="card-link btn btn">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Activity -->
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                </div>
+                <!-- profile -->
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div>
+                        <div>
+                            <div>
+                                <h1>User Name</h1>
+                                <p><i></i>5.0</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <button>
+                                        <i></i>
+                                        <p>Help</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button>
+                                        <i></i>
+                                        <p>Wallet</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button>
+                                        <i></i>
+                                        <p>Trips</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card text-center">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <div class="card-body">
+
+                                  <h5 class="card-title">Special title treatment</h5>
+                                  <div class="d-grid gap-2">
+                                    <a href="#" class="btn"><i></i>Message</a>
+                                    <a href="#" class="btn"><i></i>Settings</a>
+                                    <a href="#" class="btn"><i></i>legal</a>
+                                  </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                  userid
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+            </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.btnre{
+    width: 100% !important;
+
+
+}
+.disp2{
+    display:none;
+    border-radius: 20%;
+    background-color: orange;
+    box-shadow: 1px 2px 1px 2px;
+}
+.disp1{
+    border-radius: 1.2rem;
+    background-color: orange;
+}
+.searchbtn{
+    background-color: rgb(116, 125, 133);
+    
+    
+}
+.btn2{
+    border-radius: 1rem;
+    background-color: white;
+}
+#newridebook{
+    display: none;
+}
+#oneway{
+    display: none;
+
+}
+#multipleway{
+    display: none;
+}
+.adjustH{
+ height:100% ;   
+}

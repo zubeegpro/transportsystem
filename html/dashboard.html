@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/temp1.css" >
+    <link rel="stylesheet" href="../css/abtemp.css" >
+    <!-- <script src="../css/bootstrap/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="../css/dashboard.css" >
+</head>
+<body>
+    <div id="dashboard">
+        <div class="nav_section fixed-top ">
+            <nav class="navbar navbar-expand-lg d-inline-flex navbar-light bg-light px-5">
+                <div class="d-inline-flex">
+                    <div class="px-2 nubtop fs-6">
+                        +234 4587478474
+                    </div>
+                    <div class="px-3">
+                        [zubegenterprise@gmial.com]
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item mx-2">
+                            <!-- onclick="document.getElementById('id01').style.display='block'" -->
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="hide()"  style="width:auto;">Sign In</button>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm"><a href="../html/form.html">Sign Up</a></button>
+                        </li>                        
+                    </ul>
+                </div>
+            </nav>
+            <nav class=" nav2 navbar navbar-expand-lg  navbar-light bg-light px-5">
+                <a class="navbar-brand p-2" href="#">Transportation Service</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="dropdown" href="../html/tpabout.html" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/qrt.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/tpabout.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contact.html">Contacts</a>
+                        </li>
+    
+                    </ul> 
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item mx-3">
+                            <a href="../html/form.html"><button type="button" class="btn btn-warning">Get Started</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- class="" -->
+        <div class=" container thebody  ">
+
+            <!-- <div class="thateis make ">
+                <div class="side21 px-4">
+                    <h3>TS</h3>
+                    <ul class="list-group">
+                          <li class="list-unstyled btn btn-outline-primary "><button class="btn-sm">Dashboard</button></li>
+                          <li class="list-unstyled btn btn-outline-primary"><button>Customers </button></li>
+                          <li class="list-unstyled btn btn-outline-primary"><button>Bookings</button></li>
+                          <li class="list-unstyled btn  btn-outline-primary"><button>Buses </button></li>
+                          <li class="list-unstyled btn  btn-outline-primary"><button>History</button></li>
+                          <li class="list-unstyled btn btn-outline-primary"><button>Settings </button></li>
+                          <li class="list-unstyled btn btn-outline-primary"><button> About</button></li>
+                    </ul>
+                </div>
+            </div> -->
+         
+            <aside class="mycontass  container-fluid">
+                <div class="ticket-search-bar bg_img padding-top " style="background: url(../source/images/banner/banner2.jpg) left center;">
+                    <div class="container py-4 my-3">
+                        <div class="bus-search-header">
+                            <form action="" class="ticket-form ticket-form-two row g-3 justify-content-center">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="form-group">
+                                        <i class="las la-location-arrow"></i>
+                                        <select name="pickup" class="form-controlS select2pick select2-hidden-accessible" data-select2-id="select2-data-1-nuhs" tabindex="-1" aria-hidden="true" >
+                                            <option value="" data-select2-id="select2-data-3-tc52">Pickup Point</option>
+                                                <option value="1">BUS-stop A</option>
+                                                <option value="2">BUS-stop B</option>
+                                                <option value="3">BUS-stop C</option>
+                                                <option value="4">BUS-stop D</option>
+                                                <option value="5">BUS-stop E</option>
+                                        </select><br>
+                                        <span class="text-white"> Pickup Point</span>
+                                                                    <!-- <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-rk1h" style="width: 297px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-pickup-w7-container"><span class="select2-selection__rendered" id="select2-pickup-w7-container" role="textbox" aria-readonly="true" title="Pickup Point">Pickup Point</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="form-group form-group-lg">
+                                        <i class="las la-map-marker"></i>
+                                        <select name="destination" class="form-control-select selectDrop select2-hidden-accessible" data-select2-id="select2-data-4-0kku" tabindex="-1" aria-hidden="true">
+                                            <option value="" data-select2-id="select2-data-6-2bv0">Dropping Point</option>
+                                            <option value="1">BUS-stop A</option>
+                                            <option value="2">BUS STOP B</option>
+                                            <option value="3">BUS-STOP C</option>
+                                            <option value="4">BUS STOP D</option>
+                                            <option value="5">BUS STOP E</option>
+                                        </select><br>
+                                        <span class="text-white">Dropping Point</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="form-group form--group-lg">
+                                        <i class="las la-calendar-check"></i>
+                                        <input type="date " name="date_of_journey" class="form-control input-lg datepicker hasDatepicker" placeholder="Date of Journey" autocomplete="off" value="" id="dp1674504313673">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <button type="button" onclick="hide2()">Find Tickets</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              
+                 <section class="ticket-section padding-bottom section-bg">
+                  
+                        <div class="container">
+                            <div class="row gy-3">
+                                <div class="col-lg-3">
+                                    <form action="https://script.viserlab.com/viserbus/ticket/search" id="filterForm">
+                                        <div class="ticket-filter">
+                                            <div class="filter-header filter-item mt-3 px-5 py-3">
+                                                <h4 class="title mb-0">Filter</h4>
+                                                <button type="reset" class="reset-button h-auto">Reset All</button>
+                                            </div>
+                                            <div class="filter-item my-1 px-5 py-5">
+                                                <h5 class="title">Vehicle Type</h5>
+                                                <ul class="bus-typ list-group">
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="fleetType[]" class="search" value="1" id="Classic" type="checkbox">
+                                                        <label for="Classic"><span><i class="las la-bus"></i>Classic</span></label>
+                                                    </li>
+                                                     <li class="checkbox list-unstyled">
+                                                        <input name="fleetType[]" class="search" value="2" id="Coach" type="checkbox">
+                                                        <label for="Coach"><span><i class="las la-bus"></i>Coach</span></label>
+                                                    </li>
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="fleetType[]" class="search" value="3" id="AC" type="checkbox">
+                                                        <label for="AC"><span><i class="las la-bus"></i>AC</span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="filter-item my-3 px-5 py-5">
+                                                <h5 class="title">Routes</h5>
+                                                <ul class="bus-type list-group ">
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="routes[]" class="search" value="1" id="route.1" type="checkbox">
+                                                        <label for="route.1"><span><span><i class="las la-road"></i> Kansas to Echo Bass </span></span></label>
+                                                    </li>
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="routes[]" class="search" value="2" id="route.2" type="checkbox">
+                                                        <label for="route.2"><span><span><i class="las la-road"></i> Witchita to Echo Bass </span></span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="filter-item my-3 px-5 py-5">
+                                                <h5 class="title">Schedules</h5>
+                                                <ul class="bus-type list-group">
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="schedules[]" class="search" value="1" id="schedule.1" type="checkbox">
+                                                        <label for="schedule.1"><span><span><i class="las la-clock"></i> 06:00 am - 03:30 pm </span></span></label>
+                                                    </li>
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="schedules[]" class="search" value="2" id="schedule.2" type="checkbox">
+                                                        <label for="schedule.2"><span><span><i class="las la-clock"></i> 07:00 am - 04:00 pm </span></span></label>
+                                                    </li>
+                                                    <li class="checkbox list-unstyled">
+                                                        <input name="schedules[]" class="search" value="3" id="schedule.3" type="checkbox">
+                                                        <label for="schedule.3"><span><span><i class="las la-clock"></i> 08:00 am - 04:30 pm </span></span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+            
+                                <div class="col-lg-9">
+                                    <div > 
+                                        <div class="ticket-wrapper py-4 px-3 my-3">
+                                            <div class="ticket-item d-inline-flex ">
+                                                <div class="ticket-item-inner d-block  px-5">
+                                                    <h5 class="bus-name">AC - Kansas - Echo Bass</h5>
+                                                    <span class="bus-info">Seat Layout -  2 x 2</span>
+                                                    <span class="ratting"><i class="las la-bus"></i>AC</span>
+                                                </div>
+            
+                                                <div class="a-item-inner d-inline-flex travel-time px-5">
+                                                    <div class="bus-time px-3 py-4">
+                                                        <p class="time">08:00 AM</p>
+                                                        <p class="place">Kansas</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4 ">
+                                                        <i class="las la-arrow-right"></i>
+                                                        <p>08:30 min</p>
+                                                    </div>
+                                                    <div class=" bus-time  px-3 py-4">
+                                                        <p class="time">04:30 PM</p>
+                                                        <p class="place">Echo Bass</p>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="ticket-item-inner d-block book-ticket px-3">
+                                                    <p class="rent mb-0">$100.00</p>
+                                                    <div class="seats-left d-block mt-2 mb-3 fs-14px">
+                                                        Off Days: 
+                                                        <div class="flex-wrap " style="gap: 2.5em;">
+                                                            <span class="badge bg-primary">Friday</span>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn btn-success " href="">Select Seat</a>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="ticket-item-footer">
+                                                <div class="d-flex justify-content-start">
+                                                    <span >
+                                                        <strong>Facilities - </strong>
+                                                        <span class="facilities">Water Bottle</span>
+                                                        <span class="facilities">Pillow</span>
+                                                        <span class="facilities">Wifi</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="ticket-wrapper py-4 px-3 my-3">
+                                            <div class="ticket-item d-inline-flex">
+                                                <div class="ticket-item-inner  d-block  px-5">
+                                                    <h5 class="bus-name">Coach - Kansas - Echo Bass</h5>
+                                                    <span class="bus-info">Seat Layout -  2 x 2</span>
+                                                    <span class="ratting"><i class="las la-bus"></i>Coach</span>
+                                                </div>
+                                                <div class="d-inline-flex travel-time px-5">
+                                                    <div class="bus-time px-3 py-4">
+                                                        <p class="time">06:00 AM</p>
+                                                        <p class="place">Kansas</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4">
+                                                        <i class="las la-arrow-right"></i>
+                                                        <p>09:30 min</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4">
+                                                        <p class="time">03:30 PM</p>
+                                                        <p class="place">Echo Bass</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-item-inner -block book-ticket px-5">
+                                                    <p class="rent mb-0">$150.00</p>
+                                                    <div class="seats-left mt-2 mb-3 fs-14px">
+                                                        Off Days: 
+                                                        <div class="d-inline-flex flex-wrap" style="gap:5px">
+                                                            <span class="badge bg-primary">Thursday</span>
+                                                            <span class="badge bg-primary">Friday</span>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn btn-success" href="https://script.viserlab.com/viserbus/ticket/2/coach-kansas-echo-bass">Select Seat</a>
+                                                </div>
+                                                
+                                             
+                                            </div>
+                                            <div class="ticket-item-footer">
+                                                <div class="d-flex content-justify-center">
+                                                    <span>
+                                                        <strong>Facilities - </strong>
+                                                        <span class="facilities">Water Bottle</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                       
+                                        <div class="ticket-wrapper py-4 px-3 my-3">
+                                            <div class="ticket-item d-inline-flex">
+                                                <div class="ticket-item-inner  d-block  px-5">
+                                                    <h5 class="bus-name">Coach - Kansas - Echo Bass</h5>
+                                                    <span class="bus-info">Seat Layout -  2 x 2</span>
+                                                    <span class="ratting"><i class="las la-bus"></i>Coach</span>
+                                                </div>
+                                                <div class="d-inline-flex travel-time px-5">
+                                                    <div class="bus-time px-3 py-4">
+                                                        <p class="time">06:00 AM</p>
+                                                        <p class="place">Kansas</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4">
+                                                        <i class="las la-arrow-right"></i>
+                                                        <p>09:30 min</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4">
+                                                        <p class="time">03:30 PM</p>
+                                                        <p class="place">Echo Bass</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-item-inner -block book-ticket px-5">
+                                                    <p class="rent mb-0">$150.00</p>
+                                                    <div class="seats-left mt-2 mb-3 fs-14px">
+                                                        Off Days: 
+                                                        <div class="d-inline-flex flex-wrap" style="gap:5px">
+                                                            <span class="badge bg-primary">Thursday</span>
+                                                            <span class="badge bg-primary">Friday</span>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn btn-success" href="https://script.viserlab.com/viserbus/ticket/2/coach-kansas-echo-bass">Select Seat</a>
+                                                </div>
+                                                
+                                             
+                                            </div>
+                                            <div class="ticket-item-footer">
+                                                <div class="d-flex content-justify-center">
+                                                    <span>
+                                                        <strong>Facilities - </strong>
+                                                        <span class="facilities">Water Bottle</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+            
+                                        <div class="ticket-wrapper py-4 px-3 my-3">
+                                            <div class="ticket-item d-inline-flex">
+                                                <div class="ticket-item-inner  d-block  px-5">
+                                                    <h5 class="bus-name">Coach - Kansas - Echo Bass</h5>
+                                                    <span class="bus-info">Seat Layout -  2 x 2</span>
+                                                    <span class="ratting"><i class="las la-bus"></i>Coach</span>
+                                                </div>
+                                                <div class="d-inline-flex travel-time px-5">
+                                                    <div class="bus-time px-3 py-4">
+                                                        <p class="time">06:00 AM</p>
+                                                        <p class="place">Kansas</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4">
+                                                        <i class="las la-arrow-right"></i>
+                                                        <p>09:30 min</p>
+                                                    </div>
+                                                    <div class=" bus-time px-3 py-4">
+                                                        <p class="time">03:30 PM</p>
+                                                        <p class="place">Echo Bass</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-item-inner -block book-ticket px-5">
+                                                    <p class="rent mb-0">$150.00</p>
+                                                    <div class="seats-left mt-2 mb-3 fs-14px">
+                                                        Off Days: 
+                                                        <div class="d-inline-flex flex-wrap" style="gap:5px">
+                                                            <span class="badge bg-primary">Thursday</span>
+                                                            <span class="badge bg-primary">Friday</span>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn btn-success" href="https://script.viserlab.com/viserbus/ticket/2/coach-kansas-echo-bass">Select Seat</a>
+                                                </div>
+                                                
+                                             
+                                            </div>
+                                            <div class="ticket-item-footer">
+                                                <div class="d-flex content-justify-center">
+                                                    <span>
+                                                        <strong>Facilities - </strong>
+                                                        <span class="facilities">Water Bottle</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+        
+        
+                   
+                </section>
+            </aside>
+            <section class="container-fluid">
+                <div>
+                    <form action="">
+                        <div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+    <footer class="pt-5 pb-4">
+        <dvi class="container-fluid test-center text-md-left">
+            <div class="row text-center text-md-left ">
+                <div class="col-md-3 col-lg-3 col-sm-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        About Us
+                    </h5>
+                    <hr class="mb-4">
+                    <p class="text-white px-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                         sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-sm-2 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        About Us
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                            <a style="text-decoration: none;" href="../html/tpabout.html">About</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/qrt.html">FAQSs</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/index.html">Home</a>
+                    </p>
+                    <p>
+                          <a style="text-decoration: none;" href="../html/contact.html">Contact</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-sm-2 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        About Us
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                            <a style="text-decoration: none;" href="../html/tpabout.html">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/qrt.html">Terms and Condition</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/index.html">Ticket Policies</a>
+                    </p>
+                    <p>
+                          <a style="text-decoration: none;" href="../html/contact.html">Refund Policy</a>
+                    </p>
+                </div>
+
+                
+                <div class="col-md-2 col-lg-2 col-sm-2 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">
+                        About Us
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                            <a style="text-decoration: none;" href="../html/privacy.html">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/privacy.html">Terms and Condition</a>
+                    </p>
+                    <p>
+                        <a style="text-decoration: none;" href="../html/privacy.html">Ticket Policies</a>
+                    </p>
+                    <p>
+                          <a style="text-decoration: none;" href="../html/privacy.html">Refund Policy</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">contacts</h5>
+                    <p>
+                        <li class="fas fa-home mr-3">umuahia abia state</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-envelope mr-3">thistheemail@gmial.com</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-phone mr-3">+234-009778675</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-print mr-3">+234-009778675</li>
+                    </p>
+                </div>
+                <hr class="mb-4">
+                <div class="row d-flex justfy-content-center">
+                    <div>
+                        <p class="text-white">
+                            Copyright 2022 All Right Reserved By: <a href="#" style="text-decoration:none;">
+                            <strong class="text-info">The Proividers</strong>
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                
+
+
+            </div>
+
+        </dvi>
+    </footer>
+    <section class="dispform" id="dispform">
+        <div class="container">
+            <div class="px-3 col-sm-6 col-lg-6 col-md-6 container-fluid">
+                <div class="login-box py-3 px-4 mx-2 container">
+                    <button class="col-sm-1 d-flex align-items-center" style="box-shadow: 0.5rem 0.5rem rgb(0,0,0,0.16); background-color: gold;cursor: pointer;" onclick="hide3()"  >
+                        <i style="color: red;">X</i> 
+                    </button>
+                   <div id="abul" class="d-flex flex-column align-items-center mt-2 lead">
+                        
+                        <h2 class="py-3 text-white">Book Your Taxi</h2> 
+                        
+                        <h5 class="py-3 checkwell">we are at your services 24/7</h5>
+                       
+                   </div>
+                   <hr>
+                    <form id="form1" class="py-1">
+                        <div class="d-flex align-items-left">
+                            <div class="me-3 col-sm-1 col-md-1 col-lg-2">
+                                <h3>Pick-up Location:</h3>
+                                <h5 class=" text-white pickupdata" for=""> addjs</h5>
+                                <hr>
+                            </div>
+                             
+
+                            <div class="mx-3 col-sm-1 col-md-1 col-lg-2">
+                                <h3>Target Location:</h3>
+                                <h5 class=" text-white dropdata" for=""> addjs</h5>
+                                 <hr>
+                            </div>
+
+                            <br>
+                            <div class="mx-3 col-sm-1 col-md-1 col-lg-2">
+                                <h3>Date:</h3">
+                                <h5 class="text-white bookdate" for=""> date</h5>
+                                 <hr>
+                            </div>
+
+                        </div>
+                        <div class="user-box mt-5">
+                            <input type="text" name="" required="">
+                            <label>Full Name</label>
+                        </div>
+    
+                        <div class="user-box mt-2">
+                            <input type="number" name="" required="">
+                            <label>Phone no</label>
+                        </div>
+                        <div class="user-box mt-2">
+                            <input type="number" name="" required="">
+                            <label>Number Of Passengers</label>
+                        </div>
+                        <div class="seconduserbox mt-2">
+                            <div class="user-box seconduserbox">
+                                <input type="date" name="" required="">
+                                <label class="lahide">Pickup Date</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="time" name="" required="">
+                                <label class="lahide">Pickup Time</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <select name="payment_method" id="paymt">
+                                <option value="card">Card</option>
+                                <option value="bank">Bank</option>
+                                <option value="transfer">Transfer</option>
+                            </select>
+                            
+                        </div>
+                        <div class="cardsection">
+                            this is for card
+                            <div>
+                                <div>
+                                    <div>
+                                        <label for="">Payment Amount</label>
+                                        <h3>$ 5000.00</h3>
+                                    </div>
+                                    <div class="form-group user-box">
+                                        <input type="text" class="form-control">
+                                        <label for="">Name on Card</label>
+
+                                    </div>
+                                    <div>
+                                        <div class="form-group user-box form--group-sm">
+                                            <input type="number" class='form-control cardnum 'img="">   
+                                            <label for="">Card Number
+                                            </label>           
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex">
+                                        <div class="d-block form-group-sm">
+                                            <div class="form-group">
+                                                <input type="month" class="form-control">  
+                                                <label for="" class="lahide">Expiry</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-block  ">
+                                            <div class="form-group form-group-sm user-box">
+                                                <label for="">CVC</label>
+                                                <input type="number" max="3" class="lesinpt">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transfersection">
+                            this is for bank tansfer
+                        </div>
+                        
+                        <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Book Now
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    
+    
+    <script src="../source/js/index.js"></script>
+</body>
+
+</html>

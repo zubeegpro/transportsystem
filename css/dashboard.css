@@ -1,0 +1,92 @@
+.shorform{
+    background-color:#eee;
+    /* border-radius: 1rem 1rem; */
+    border-top-left-radius:1rem ;
+    border-top-right-radius:1rem;
+    /* padding-bottom: 6rem; */
+}
+
+.ticket-search-bar{
+    background-color: rgb(13, 21, 165);
+
+    width: 100%;
+}
+.filter-item{
+    background-color: white;
+}
+
+.ticket-section{
+    background-color: #3e8de3;
+    /* background-color: red; */
+
+}
+#abul{
+    border-radius: 25px;
+    border: 0.1px solid #099fff;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 6px 20px 0 rgb(0,0,0,0.19);
+
+}
+.lesinpt{
+    width: 3em;
+}
+.cardsection{
+    display: block;
+    color: white;
+    
+}
+.transfersection{
+    display: none;
+}
+.title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+}
+.ticket-item{
+    background-color: white;
+
+}
+
+.ticket-wrapper{
+    background-color: white;
+
+}
+.rent{
+    color:red;
+    font-weight: bold;
+}
+
+.divider{
+    display: grid;
+    margin-bottom: 3rem;
+    /* grid-template-columns:0.18fr 3fr; */
+}
+.checkwell{
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.make{
+
+    background-color: #143aa2;
+    font-size: larger;
+}
+/* .mycontass{
+    margin-top: 1rem;
+} */
+.side21 button{
+    border: 0;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+
+}
+.side21 li{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    border-left: 1px solid;
+}
+.side21 {
+    vertical-align: middle;
+}
+
